@@ -1,0 +1,12 @@
+<div class="chatBox-container">
+    <div class="side-bar">
+        <app-header></app-header>
+        <app-search-add></app-search-add>
+        <div class="chat-list">
+            <app-chat-item *ngFor="let item of chatList|sort:'time'" [chat]="item" [routerLink]="[item.id]"></app-chat-item>
+        </div>
+    </div>
+    <div class="chat-details">
+        <router-outlet></router-outlet>
+    </div>
+</div>

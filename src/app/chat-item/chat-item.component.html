@@ -1,0 +1,16 @@
+<div class="chat-item" routerLinkActive="active">
+    <div class="icon">
+        <i class="bi bi-people-fill"></i>
+    </div>
+    <div class="chat-item-content">
+        <div class="chat-content">
+            <h3>{{chat.name}}</h3>
+            <p *ngIf="chat.messages.length">{{chat.messages[chat.messages.length-1].sender?'You':'Anonymous'}}: {{chat.messages[chat.messages.length-1].message}}</p>
+            <p *ngIf="chat.messages.length==0">Chat Group Created on {{chat.time|date:"dd/MM/YY hh:mm a"}}</p>
+        </div>
+        <div class="last-message-time">
+            <p>{{ToggleShowTime()?(chat.time|date:'shortTime'):chat.time|date:'dd/MM/YY'}}</p>
+        </div>
+    </div>
+
+</div>

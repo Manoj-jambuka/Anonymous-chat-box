@@ -1,0 +1,112 @@
+.chat-details-container{
+    background-color:rgb(240, 235, 227,1);
+    background-image: url('/assets/images/chat-details-bg.png');
+    /* height:99vh; */
+}
+
+.chat-details-header{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px ;
+}
+.chat-details-header h2{
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: rgba(98, 114, 122,0.8);
+    font-weight: 600;
+}
+.chat-details-header .delete-icon{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-messages{
+    padding:15px 10px 10px 10px;
+    height:83vh;
+    overflow-y: scroll;
+}
+.message-time{
+    font-size: 7px;
+    width: max-content;
+    margin: 0;
+    margin-left: auto;
+}
+.message-text{
+    font-size: 12px;
+    padding-right: 30px;
+    margin: 0;
+    margin-right: auto;
+}
+
+.chat-messages .me{
+    background-color:rgba(217, 253, 211,1);
+    margin:5px 0px 0px auto;
+}
+.message{
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 50%;
+    padding: 2px 5px 2px 10px;
+    border-radius: 5px;
+
+}
+.chat-messages .you{
+    background-color:#fff;
+    margin:5px auto 0px 0px;
+}
+.chat-details-header .icon{
+    margin: 5px 10px 5px 0px;
+    padding: 6px 9px 6px 9px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #cfd5d7;
+}
+.icon i{
+    color: #fff;
+}
+
+.send-message{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(240, 242, 245, 1);
+    padding: 10px;
+}
+.type-message{
+    width: 100%;
+}
+.type-message input{
+    width:95%;
+    height: 26px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: inherit;
+}
+.type-message input:focus-visible{
+    outline: none;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar{
+    width: 4px !important;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+     background-color: rgb(112, 108, 108);
+}

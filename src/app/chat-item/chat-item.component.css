@@ -1,0 +1,59 @@
+h3,p{
+    padding: 0px;
+    margin:0;
+}
+
+.chat-item .icon{
+    margin: 5px 10px 5px 15px;
+    padding: 7px 9px 7px 9px;
+    border-radius: 50%;
+    width: 21px;
+    border: 2px solid #ddd;
+    background-color: #cfd5d7;
+}
+.chat-item .icon i{
+    color: #fff;
+    font-size: 21px;
+}
+.chat-item .last-message-time{
+    font-size: 10px;   
+    padding: 5px;
+}
+.chat-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.chat-item:hover{
+    background-color: #f8f8f8;
+}
+.chat-item-content{
+    width: 100%;
+    padding: 20px 0px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.chat-item .chat-content p{
+    font-size: 12px;
+    padding-top: 2px;
+    white-space: nowrap; 
+  max-width:400px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.chat-item .chat-content h3{
+    color: rgba(98, 114, 122,0.8);
+    font-size: 15px;
+    font-weight: 700;
+}
+.active{
+    background-color: #ebebeb;
+}
+.last-message-time p{
+    font-weight: 700;
+    color: rgba(98, 114, 122,0.8);
+}
